@@ -1,0 +1,19 @@
+<p>Team List View (Admin Only View)</p>
+
+<div class="span10">
+    <!--Body content-->
+
+    <ul class="teams">
+        <li ng-repeat="team in teams">
+            <span>Name: {{team.name}}</span>
+            <span>Level: {{team.level}}</span>
+            <span>Age: {{team.age}}</span>
+            <a href="#/teams/{{team.id}}">{{team.name}}</a>
+        </li>
+    </ul>
+
+    <div>
+        {{ teams | json }}
+    </div>
+    <p><a href="#/create-team">Create New Team</a></p>
+</div>

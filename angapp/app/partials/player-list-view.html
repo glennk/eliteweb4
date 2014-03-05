@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="page-header">
+        <h2>Players</h2>
+    </div>
+
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Contacts</th>
+                        <th ng-show="hasRole('admin')">Action</th>
+                    </tr>
+                    </thead>
+                    <tr ng-repeat="player in players">
+                        <td>{{player.jerseyNum}}</td>
+                        <td>{{player.firstname}}</td>
+                        <td>{{player.lastname}}</td>
+                        <td>{{player.email}}</td>
+                        <td>{{player.phone}}</td>
+                        <td>{{player.contacts}}</td>
+                        <td ng-show="hasRole('admin')"><a href="#/players/{{player.id}}">Edit / Delete</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

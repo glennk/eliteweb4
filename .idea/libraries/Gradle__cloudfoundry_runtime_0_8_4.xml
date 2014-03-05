@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: cloudfoundry-runtime-0.8.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.cloudfoundry/cloudfoundry-runtime/0.8.4/86439178327aa94d1865df79b70a42a9f01d8bbe/cloudfoundry-runtime-0.8.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.cloudfoundry/cloudfoundry-runtime/0.8.4/59ca50399e719c78847b20ba2deaacf3c7beb2c1/cloudfoundry-runtime-0.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

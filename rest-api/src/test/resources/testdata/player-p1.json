@@ -1,0 +1,12 @@
+{
+    "player": [
+        {
+            "_id": "abcd-efgh-1234",
+            "firstname": "Michael",
+            "lastname": "Kronschnabl",
+            "email": "mkron00@gmail.com",
+            "phone": "512-555-1212",
+            "jerseyNum": "32"
+        }
+    ]
+}

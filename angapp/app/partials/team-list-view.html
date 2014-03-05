@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="page-header">
+        <h2>Teams</h2>
+    </div>
+
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Level</th>
+                        <th>Age</th>
+                        <th ng-show="hasRole('admin')">Action</th>
+                    </tr>
+                    </thead>
+                    <tr ng-repeat="team in teams">
+                        <td><a href="#/team/{{team.id}}/players">{{team.name}}</a></td>
+                        <td>{{team.level}}</td>
+                        <td>{{team.age}}</td>
+                        <td ng-show="hasRole('admin')"><a href="#/teams/{{team.id}}">Edit / Delete</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

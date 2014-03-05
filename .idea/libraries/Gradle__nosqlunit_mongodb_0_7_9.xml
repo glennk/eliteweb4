@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: nosqlunit-mongodb-0.7.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lordofthejars/nosqlunit-mongodb/0.7.9/8f6319186a3d5cb1138cd88863446deff54af068/nosqlunit-mongodb-0.7.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lordofthejars/nosqlunit-mongodb/0.7.9/90ff86387963ccd2e768e54d51650033ee964bc3/nosqlunit-mongodb-0.7.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

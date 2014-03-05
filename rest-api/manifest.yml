@@ -1,0 +1,14 @@
+---
+applications:
+- name: austin1
+  memory: 512M
+  instances: 1
+  host: austin1
+  domain: cfapps.io
+  path: build/libs/eliteweb-0.4.0.jar
+  services:
+    mongolab-be5bb:
+      label: mongolab
+      provider: mongolab
+      version: n/a
+      plan: sandbox

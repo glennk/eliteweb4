@@ -1,0 +1,33 @@
+<p>Team Detail view (Admin Only view)</p>
+
+
+<form name="myForm">
+
+    <!--<div>-->
+        <!--<label>team id</label>-->
+        <!--<input type="text" name="id" ng-model="team.id" required>-->
+    <!--</div>-->
+
+    <div>
+        <label>team name</label>
+        <input type="text" name="name" ng-model="team.name" required>
+    </div>
+
+    <div>
+        <label>team level</label>
+        <input type="text" name="level" ng-model="team.level" required>
+    </div>
+
+    <div>
+        <label>team age</label>
+        <input type="text" name="age" ng-model="team.age" required>
+    </div>
+
+    <br>
+    <a href="#/teams" class="btn">Cancel</a>
+    <button id=save ng-click="save()" ng-disabled="myForm.$invalid"
+            class="btn btn-primary">Save</button>
+    <button id=delete ng-click="destroy()"
+            ng-show="team.$remove" class="btn btn-danger">Delete</button>
+
+</form>

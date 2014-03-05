@@ -1,0 +1,51 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1>Player Detail</h1>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+
+            <form name="myForm" role="form">
+
+                <div class="form-group">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="Enter Firstname" ng-model="player.firstname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter Lastname" ng-model="player.lastname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter Email" ng-model="player.email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter Phone #" ng-model="player.phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="jerseyNum">Jersey #</label>
+                    <input type="text" class="form-control" id="jerseyNum" placeholder="Enter Jersey #" ng-model="player.jerseyNum" required>
+                </div>
+
+                <br>
+                <a href="#/players" class="btn">Cancel</a>
+                <button id=save ng-click="save()" ng-disabled="myForm.$invalid"
+                        class="btn btn-primary">Save
+                </button>
+                <button id=delete ng-click="destroy()"
+                        ng-show="player.$remove" class="btn btn-danger">Delete
+                </button>
+            </form>
+
+        </div>
+    </div>
+</div>

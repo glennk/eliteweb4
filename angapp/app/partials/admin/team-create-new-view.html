@@ -1,0 +1,17 @@
+<p>Create New Team (Admin Only)</p>
+
+<form name="myForm" ng-controller="TeamCreateCtrl" ng-submit="CreateTeam()">
+    teamName: <input name="input1" ng-model="team.name" required>
+    <span class="error" ng-show="myForm.input1.$error.required">Required!</span><br>
+
+    teamLevel: <input name="input2" ng-model="team.level" required>
+    <span class="error" ng-show="myForm.input2.$error.required">Required!</span><br>
+
+    teamAge: <input name="input3" ng-model="team.age" required>
+    <span class="error" ng-show="myForm.input3.$error.required">Required!</span><br>
+
+    <tt>myForm.$valid = {{myForm.$valid}}</tt><br>
+    <tt>myForm.$error.required = {{!!myForm.$error.required}}</tt><br>
+
+    <input class="btn-primary" type="submit" value="add">
+</form>

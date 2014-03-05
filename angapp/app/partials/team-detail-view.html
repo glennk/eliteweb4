@@ -1,0 +1,43 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1>Team Detail</h1>
+    </div>
+</div>
+
+        YOYO
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+
+            <form name="myForm" role="form">
+
+                <div class="form-group">
+                    <label for="teamname">Team Name</label>
+                    <input type="text" class="form-control" id="teamname" placeholder="Enter Team Name" ng-model="team.name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="level">Level</label>
+                    <input type="text" class="form-control" id="level" placeholder="Enter Level" ng-model="team.level" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="text" class="form-control" id="age" placeholder="Enter Age Group" ng-model="team.age" required>
+                </div>
+
+                <br>
+                <a href="#/teams" class="btn">Cancel</a>
+                <button id=save ng-click="save()" ng-disabled="myForm.$invalid"
+                        class="btn btn-primary">Save
+                </button>
+                <button id=delete ng-click="destroy()"
+                        ng-show="team.$remove" class="btn btn-danger">Delete
+                </button>
+            </form>
+
+        </div>
+    </div>
+</div>
